@@ -157,7 +157,7 @@ The left panel plots global connection-pool size against wiring cost: simply the
 number of local and global connections that remain after sparsity. The solid
 curves are the model predictions, while the points show individual species.
 Blue gives the cost if a species used a salt-and-pepper organisation; orange
-gives the cost if it used a topological map. Lower is cheaper.
+gives the cost if it used a topological organisation. Lower is cheaper.
 
 The right panel condenses this comparison into the ratio of topological cost to
 salt-and-pepper cost. Above 1, salt-and-pepper uses fewer connections; at 1,
