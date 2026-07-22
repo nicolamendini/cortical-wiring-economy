@@ -69,7 +69,7 @@ conspicuous; its mean displacement is the same two-cell value explored in the
     <th width="50%">Tree shrew</th>
   </tr>
   <tr>
-    <td><img src="demo_assets/neuron_3649_connectivity_flipped_alpha07.png" alt="Learned patchy L2/3 excitation and preferred orientation axis in the model"></td>
+    <td><img src="demo_assets/case_3649_connectivity_flipped_alpha05.png" alt="Learned patchy L2/3 excitation and preferred orientation axis in the model"></td>
     <td><img src="F8.large.jpg" alt="Anatomically traced horizontal connections in tree-shrew visual cortex"></td>
   </tr>
 </table>
@@ -81,6 +81,19 @@ and supports a domain of similarly tuned neurons. A **global connection pool**
 is the much larger territory from which selective long-range connections can
 be drawn. Large local domains cost more to build, but their pooling can make
 the representation robust enough to tolerate much sparser global wiring.
+
+The same model neuron makes the distinction visible. Its complete short-range
+excitatory neighbourhood forms the dark central cluster, while a sparse sample
+of learned, longer-range connections forms the lighter patches around it.
+
+<p align="center">
+  <img src="demo_assets/local_global_connection_pools.png" width="62%" alt="Opaque local and translucent global excitatory connections for the same model neuron">
+</p>
+
+**● Local connections (n = 49)** are fully opaque and include every connection
+in the short-range field. **● Global connections (n = 321)** are shown at 0.3
+opacity and are a 10% importance sample from the learned field. Both use the
+same marker size, positional scatter and diagonal flip.
 
 That gives evolution two viable strategies:
 
