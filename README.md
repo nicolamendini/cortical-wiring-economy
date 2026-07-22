@@ -87,13 +87,13 @@ excitatory neighbourhood forms the dark central cluster, while a sparse sample
 of learned, longer-range connections forms the lighter patches around it.
 
 <p align="center">
-  <img src="demo_assets/local_global_connection_counts.png" width="62%" alt="Filled local and hollow global excitatory connections for the same model neuron, with connection counts">
+  <img src="demo_assets/local_global_connection_legend_sparse.png" width="62%" alt="Filled local and hollow sparse global excitatory connections for the same model neuron, with a connection-count legend">
 </p>
 
 **● Local connections (n = 49)** are fully opaque and include every connection
-in the short-range field. **○ Global connections (n = 321)** use a thin solid
-black outline and are a 10% importance sample from the learned field. Both use
-the same marker size, positional scatter and diagonal flip.
+in the short-range field. **○ Global connections (n = 81)** use a thin solid
+black outline at 0.5 opacity and are a 2.5% importance sample from the learned
+field. Both use the same marker size, positional scatter and diagonal flip.
 
 That gives evolution two viable strategies:
 
