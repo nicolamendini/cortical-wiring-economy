@@ -71,7 +71,7 @@ conspicuous; its mean displacement is the same two-cell value explored in the
   </tr>
 </table>
 
-## 5. From one network to an evolutionary trade-off
+## 5. An evolutionary trade-off
 
 In our work, we argue that **local connection pools** (number of possible local connections) build
 and support domains of similarly tuned neurons. By contrast, **global connection pools** (number of possible long-range connections)
@@ -81,18 +81,13 @@ the network robust enough to tolerate much sparser global wiring.
 
 Consistent with this wiring-economy premise, primate L2/3 neurons receive two to five times fewer synapses than mouse neurons ([Wildenberg et al., 2021](https://doi.org/10.1016/j.celrep.2021.109709)).
 
-The same model neuron makes the distinction visible. Its complete short-range
-excitatory neighbourhood forms the dark central cluster, while a sparse sample
-of learned, longer-range connections forms the lighter patches around it.
+We show an example of realised local and long-range connections from the model. Short-range
+excitatory neighbourhood forms the dense central cluster, while a sparse sample
+of learned, longer-range excitatory connections forms the lighter patches around it.
 
 <p align="center">
   <img src="demo_assets/local_global_legend_bottom_left_bounded.png" width="62%" alt="Filled local and hollow sparse global excitatory connections within the cortical sheet boundary, with a connection-count legend in the lower-left corner">
 </p>
-
-**● Local connections (n = 49)** are fully opaque and include every connection
-in the short-range field. **○ Global connections (n = 161)** use a thin solid
-black outline at 0.5 opacity and are a 5% importance sample from the learned
-field.
 
 Our central claim is that evolution prefers a connectivity scheme based on large domains, leading to topological maps, when the total cost of dense local connectivity and sparse global connectivity falls below that of a competing scheme made of little local connectivity and dense global connectivity, leading to salt-and-pepper maps. The model behind the salt-and-pepper scheme is based on largely overlapping computations (micro-GCAL, see [microdomains demo](https://github.com/nicolamendini/microdomains) but not shown here).
 
