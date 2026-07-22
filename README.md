@@ -21,7 +21,7 @@ connections.
 
 Red marks net excitation, blue marks net inhibition and the black dot is the
 model neuron whose incoming connections are being followed. The dashed line on
-L2/3 is the neurons preferred orientation axis. As learning proceeds, the long-range
+L2/3 is the neuron's preferred orientation axis. As learning proceeds, the long-range
 connections develop a patchy structure and tend to reach other regions that represent
 related orientations.
 
@@ -51,8 +51,8 @@ repeating at a characteristic spacing across the cortical sheet.
 ![Development of L4 and L2/3 orientation maps](demo_assets/03_orientation_maps.gif)
 
 ## 4. A comparison with real connectivity
-Samples of learned L2/3 connection fields show remarkably similar connectivity profiles in animal species. In the  figure, anatomical
-tracing from tree-shrew visual cortex from
+Samples of learned L2/3 connection fields show remarkably similar connectivity profiles in animal species. The right panel shows an anatomical
+tracing from tree-shrew visual cortex, reproduced from
 [Bosking et al. (1997)](https://doi.org/10.1523/JNEUROSCI.17-06-02112.1997).
 The model panel shows an importance sample from one neuron's learned patchy
 lateral excitatory field. Its grey line marks that neuron's preferred orientation
@@ -76,8 +76,10 @@ conspicuous; its mean displacement is the same two-cell value explored in the
 In our work, we argue that **local connection pools** (number of possible local connections) build
 and support domains of similarly tuned neurons. By contrast, **global connection pools** (number of possible long-range connections)
 are the much larger territory from which selective long-range connections can
-be drawn. Large local domains require a significant metabolic cost to be build, but their pooling can make
+be drawn. Large local domains require a significant metabolic cost to build, but their pooling can make
 the network robust enough to tolerate much sparser global wiring.
+
+Consistent with this wiring-economy premise, primate L2/3 neurons receive two to five times fewer synapses than mouse neurons ([Wildenberg et al., 2021](https://doi.org/10.1016/j.celrep.2021.109709)).
 
 The same model neuron makes the distinction visible. Its complete short-range
 excitatory neighbourhood forms the dark central cluster, while a sparse sample
@@ -92,7 +94,7 @@ in the short-range field. **○ Global connections (n = 161)** use a thin solid
 black outline at 0.5 opacity and are a 5% importance sample from the learned
 field.
 
-Our central claim is that evolution prefers a connectivity scheme based on large domains, leading to topological maps, when the total cost of dense local connectivity and sparse global connectivity surpasses a competing scheme made of little local connectivity and dense global connectivity, leading to salt-and-pepper maps. The model behind the salt-and-pepper scheme is based on largely overlapping computations (micro-GCAL, see [microdomains demo](https://github.com/nicolamendini/microdomains) but not shown here).
+Our central claim is that evolution prefers a connectivity scheme based on large domains, leading to topological maps, when the total cost of dense local connectivity and sparse global connectivity falls below that of a competing scheme made of little local connectivity and dense global connectivity, leading to salt-and-pepper maps. The model behind the salt-and-pepper scheme is based on largely overlapping computations (micro-GCAL, see [microdomains demo](https://github.com/nicolamendini/microdomains) but not shown here).
 
 In our formalisation, total realised wiring is written as
 
