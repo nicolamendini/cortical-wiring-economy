@@ -96,12 +96,12 @@ Our central claim is that evolution prefers a connectivity scheme based on large
 
 In our formalisation, total realised wiring is written as
 
-\[
+$$
 C = \frac{L}{1+s_L} + \frac{G}{1+s_G},
-\]
+$$
 
-where \(L\) and \(G\) are the available local and global pools, and \(s_L\)
-and \(s_G\) describe how sparse their realised connections can be while the
+where $L$ and $G$ are the available local and global pools, and $s_L$
+and $s_G$ describe how sparse their realised connections can be while the
 network remains stable. The simulations identify the stability-preserving
 local/global sparsity combinations; the least costly one is selected for each
 pool size. The important idea is the trade-off, not the algebra: **topological
@@ -124,10 +124,10 @@ opportunity for sparse wiring.
 
 | Species / area | Organisation | Span r (mm) | Elongation s | Neurons under 1 mm² η (10³) | Global pool P (10³) | Map period Λ (mm) | Local/domain pool D (10³) |
 |---|---|---:|---:|---:|---:|---:|---:|
-| Hamster V1 | Salt-and-pepper | 1.5 | 0.76† | 100† | 537 | 0.10† | 1 |
-| Rat V1 | Salt-and-pepper | 1.8 | 0.76† | 100 | 774 | 0.10† | 1 |
-| Squirrel V1 | Salt-and-pepper | 1.8 | 0.76 | 100† | 774 | 0.10† | 1 |
-| Rabbit V1 | Salt-and-pepper | 1.5 | 0.76† | 100† | 537 | 0.10† | 1 |
+| Hamster V1 | Salt-and-pepper | 1.5 | 0.76† | 100† | 537 | 0.10† | — |
+| Rat V1 | Salt-and-pepper | 1.8 | 0.76† | 100 | 774 | 0.10† | — |
+| Squirrel V1 | Salt-and-pepper | 1.8 | 0.76 | 100† | 774 | 0.10† | — |
+| Rabbit V1 | Salt-and-pepper | 1.5 | 0.76† | 100† | 537 | 0.10† | — |
 | Tree shrew V1 | Topological | 2.5 | 0.51 | 100† | 1,000 | 0.63 | 31 |
 | Cat V1 | Topological | 3.5 | 0.56† | 100 | 2,160 | 1.00 | 79 |
 | Ferret V1 | Topological | 3.5 | 0.56† | 100† | 2,160 | 0.85 | 57 |
@@ -137,7 +137,8 @@ opportunity for sparse wiring.
 | Macaque V1 | Topological | 3.7 | 0.56 | 250 | 6,000 | 0.76 | 113 |
 | Macaque V2 | Topological | 4.0 | 0.63 | 170 | 5,380 | 0.95 | 120 |
 
-† Estimated value. Full references and estimation rules are provided in the
+— No measurable orientation domain. † Estimated value. Full references and
+estimation rules are provided in the
 preprint/book chapter
 [*What do species differences in cortical map organization reveal about the evolution of cortical circuitry?*](https://github.com/nicolamendini/evolution-of-cortical-modules).
 Here the two original tables are merged so the local and global pool estimates
