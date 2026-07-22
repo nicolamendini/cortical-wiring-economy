@@ -93,12 +93,12 @@ Our central claim is that evolution prefers a connectivity scheme based on large
 
 In our formalisation, total realised wiring is written as
 
-$$
-C = \frac{L}{1+s_L} + \frac{G}{1+s_G},
-$$
+<p align="center">
+  <img src="demo_assets/wiring_cost_equation.svg" width="420" alt="C equals L divided by one plus s sub L, plus G divided by one plus s sub G">
+</p>
 
-where $L$ and $G$ are the available local and global pools, and $s_L$
-and $s_G$ describe how sparse their realised connections can be while the
+where <i>L</i> and <i>G</i> are the available local and global pools, and
+<i>s</i><sub>L</sub> and <i>s</i><sub>G</sub> describe how sparse their realised connections can be while the
 network remains stable. The simulations identify the stability-preserving
 local/global sparsity combinations; the least costly one is selected for each
 pool size. The important idea is the trade-off, not the algebra: **topological
@@ -158,7 +158,7 @@ The right panel condenses this comparison into the ratio of topological cost to
 salt-and-pepper cost. Above 1, salt-and-pepper uses fewer connections; at 1,
 the two organisations cost the same; and below 1, the topological map is
 cheaper. The model predicts a transition between these regimes at a global
-pool size of roughly $9 \times 10^5$ neurons.
+pool size of roughly 9 × 10<sup>5</sup> neurons.
 
 [![Predicted wiring-cost transition and animal data](demo_assets/crossing.png)](crossing.pdf)
 
