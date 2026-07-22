@@ -153,6 +153,18 @@ model, species with salt-and-pepper and topological maps separate clearly. The
 same simple wiring-economy argument that emerges from the simulations therefore
 organises the comparative data across primate and non-primate species.
 
+The left panel plots global connection-pool size against wiring cost: simply the
+number of local and global connections that remain after sparsity. The solid
+curves are the model predictions, while the points show individual species.
+Blue gives the cost if a species used a salt-and-pepper organisation; orange
+gives the cost if it used a topological map. Lower is cheaper.
+
+The right panel condenses this comparison into the ratio of topological cost to
+salt-and-pepper cost. Above 1, salt-and-pepper uses fewer connections; at 1,
+the two organisations cost the same; and below 1, the topological map is
+cheaper. The model predicts a transition between these regimes at a global
+pool size of roughly $9 \times 10^5$ neurons.
+
 [![Predicted wiring-cost transition and animal data](demo_assets/crossing.png)](crossing.pdf)
 
 The broad picture is simple: the cortex can spend connections locally to build
