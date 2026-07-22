@@ -57,27 +57,22 @@ repeating at a characteristic spacing across the cortical sheet.
 The final learned L2/3 connection field is strikingly similar to an anatomical
 tracing from tree-shrew visual cortex. The biological example is from
 [Bosking et al. (1997)](https://doi.org/10.1523/JNEUROSCI.17-06-02112.1997).
-The model panel shows every short-range excitatory connection together with an
-importance sample of learned global excitation. A small continuous positional
-scatter makes the model lattice less conspicuous; its mean displacement is the
-same two-cell value explored in the
+The model panel shows an importance sample from one neuron's learned patchy
+lateral excitation. Its grey line marks that neuron's preferred orientation
+axis. A small continuous positional scatter makes the model lattice less
+conspicuous; its mean displacement is the same two-cell value explored in the
 [microdomains demo](https://github.com/nicolamendini/microdomains).
 
 <table>
   <tr>
-    <th width="50%">Tree shrew</th>
     <th width="50%">Self-organising model</th>
+    <th width="50%">Tree shrew</th>
   </tr>
   <tr>
+    <td><img src="demo_assets/model_patchy_connectivity.png" alt="Learned patchy L2/3 excitation and preferred orientation axis in the model"></td>
     <td><img src="F8.large.jpg" alt="Anatomically traced horizontal connections in tree-shrew visual cortex"></td>
-    <td><img src="demo_assets/model_local_global_connectivity.png" alt="Local and learned global L2/3 excitation in the model"></td>
   </tr>
 </table>
-
-**● Local connections (n = 49)** are shown as solid black dots.
-**● Global connections (n = 906)** are shown at 0.4 opacity; these are 90% of
-the 1,006 connections remaining after applying the displayed field's 0.02
-threshold. The model panel contains no orientation guide or annotation.
 
 ## 5. From one network to an evolutionary trade-off
 
@@ -153,4 +148,3 @@ organises the comparative data across primate and non-primate species.
 The broad picture is simple: the cortex can spend connections locally to build
 a map, or spend them globally to coordinate a less ordered sheet. Different
 brains appear to settle on different sides of the same economical compromise.
-
