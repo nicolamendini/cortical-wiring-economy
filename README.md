@@ -1,4 +1,4 @@
-# From self-organisation to cortical map evolution
+# When is a Cortical Map Worth the Wiring?
 
 Why does the visual cortex of some species organise into smooth maps of orientation preference, while in others (mostly rodents) it shows an apparently random 'salt-and-pepper' pattern? This demo follows one
 self-organising network from visual input to learned cortical structure, then
