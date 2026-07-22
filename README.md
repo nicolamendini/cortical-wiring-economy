@@ -1,7 +1,6 @@
 # From self-organisation to cortical map evolution
 
-Why do some animals arrange visual cortex into smooth maps, while others mix
-neighbouring preferences in a salt-and-pepper pattern? This demo follows one
+Why does the visual cortex of some species organise into smooth maps of orientation preference, while in others (mostly rodents) it shows an apparently random 'salt-and-pepper' pattern? This demo follows one
 self-organising network from visual input to learned cortical structure, then
 uses it to motivate a simple answer: evolution may be balancing the cost of
 nearby and far-reaching connections.
@@ -9,10 +8,9 @@ nearby and far-reaching connections.
 The model is inspired by **GCAL**, a model in which visual experience, recurrent
 activity and Hebbian learning jointly shape receptive fields and cortical maps
 ([Stevens et al., 2013](https://doi.org/10.1523/JNEUROSCI.1037-13.2013)). The
-version shown here adds a second cortical stage so that we can watch structure
-spread from layer 4 into layers 2/3.
+version shown here adds a second cortical stage, modelling cortical layer 4 and layers 2/3.
 
-## 1. A map learns its own wiring
+## 1. Emergent connectivity
 
 Read the animation from bottom to top. The **LGN** relays small patches of the
 visual input to **layer 4 (L4)**. With experience, L4 neurons learn selective
@@ -23,8 +21,8 @@ connections.
 
 Red marks net excitation, blue marks net inhibition and the black dot is the
 model neuron whose incoming connections are being followed. The dashed line on
-L2/3 is its preferred orientation axis. As learning proceeds, the long-range
-connections become patchy and tend to reach other regions that represent
+L2/3 is the neurons preferred orientation axis. As learning proceeds, the long-range
+connections develop a patchy structure and tend to reach other regions that represent
 related orientations.
 
 ![Development of afferent, feedforward and lateral connectivity](demo_assets/01_laminar_connectivity.gif)
@@ -52,13 +50,12 @@ repeating at a characteristic spacing across the cortical sheet.
 
 ![Development of L4 and L2/3 orientation maps](demo_assets/03_orientation_maps.gif)
 
-## 4. A connection field the model was never shown
-
-The final learned L2/3 connection field is strikingly similar to an anatomical
-tracing from tree-shrew visual cortex. The biological example is from
+## 4. A comparison with real connectivity
+Samples of learned L2/3 connection fields show remarkably similar connectivity profiles in animal species. In the  figure, anatomical
+tracing from tree-shrew visual cortex from
 [Bosking et al. (1997)](https://doi.org/10.1523/JNEUROSCI.17-06-02112.1997).
 The model panel shows an importance sample from one neuron's learned patchy
-lateral excitation. Its grey line marks that neuron's preferred orientation
+lateral excitatory field. Its grey line marks that neuron's preferred orientation
 axis. A small continuous positional scatter makes the model lattice less
 conspicuous; its mean displacement is the same two-cell value explored in the
 [microdomains demo](https://github.com/nicolamendini/microdomains).
@@ -76,11 +73,11 @@ conspicuous; its mean displacement is the same two-cell value explored in the
 
 ## 5. From one network to an evolutionary trade-off
 
-The animations suggest a useful distinction. A **local connection pool** builds
-and supports a domain of similarly tuned neurons. A **global connection pool**
-is the much larger territory from which selective long-range connections can
-be drawn. Large local domains cost more to build, but their pooling can make
-the representation robust enough to tolerate much sparser global wiring.
+In our work, we argue that **local connection pools** (number of possible local connections) build
+and support domains of similarly tuned neurons. By contrast, **global connection pools** (number of possible long-range connections)
+are the much larger territory from which selective long-range connections can
+be drawn. Large local domains require a significant metabolic cost to be build, but their pooling can make
+the network robust enough to tolerate much sparser global wiring.
 
 The same model neuron makes the distinction visible. Its complete short-range
 excitatory neighbourhood forms the dark central cluster, while a sparse sample
@@ -93,16 +90,11 @@ of learned, longer-range connections forms the lighter patches around it.
 **● Local connections (n = 49)** are fully opaque and include every connection
 in the short-range field. **○ Global connections (n = 161)** use a thin solid
 black outline at 0.5 opacity and are a 5% importance sample from the learned
-field. Both use the same marker size, positional scatter and diagonal flip.
+field.
 
-That gives evolution two viable strategies:
+Our central claim is that evolution prefers a connectivity scheme based on large domains, leading to topological maps, when the total cost of dense local connectivity and sparse global connectivity surpasses a competing scheme made of little local connectivity and dense global connectivity, leading to salt-and-pepper maps. The model behind the salt-and-pepper scheme is based on largely overlapping computations (micro-GCAL, see [microdomains demo](https://github.com/nicolamendini/microdomains) but not shown here).
 
-- A salt-and-pepper organisation keeps the local pool small, but may need a
-  denser sample of its global pool.
-- A topological map pays for larger local domains, but may recover that cost by
-  making long-range connectivity much sparser.
-
-In the model, total realised wiring is written as
+In our formalisation, total realised wiring is written as
 
 \[
 C = \frac{L}{1+s_L} + \frac{G}{1+s_G},
