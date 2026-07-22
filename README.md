@@ -145,9 +145,11 @@ opportunity for sparse wiring.
 | Macaque V1 | Topological | 3.7 | 0.56 | 250 | 6,000 | 0.76 | 113 |
 | Macaque V2 | Topological | 4.0 | 0.63 | 170 | 5,380 | 0.95 | 120 |
 
-† Estimated value. The two original tables, their literature sources and their
-estimation rules are retained in the accompanying manuscript draft. Here they
-are merged so the local and global pool estimates can be read together.
+† Estimated value. Full references and estimation rules are provided in the
+preprint/book chapter
+[*What do species differences in cortical map organization reveal about the evolution of cortical circuitry?*](https://github.com/nicolamendini/evolution-of-cortical-modules).
+Here the two original tables are merged so the local and global pool estimates
+can be read together.
 
 ## The result
 
