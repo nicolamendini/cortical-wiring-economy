@@ -69,7 +69,7 @@ conspicuous; its mean displacement is the same two-cell value explored in the
     <th width="50%">Tree shrew</th>
   </tr>
   <tr>
-    <td><img src="demo_assets/model_patchy_connectivity.png" alt="Learned patchy L2/3 excitation and preferred orientation axis in the model"></td>
+    <td><img src="demo_assets/model_patchy_connectivity_flipped.png" alt="Learned patchy L2/3 excitation and preferred orientation axis in the model"></td>
     <td><img src="F8.large.jpg" alt="Anatomically traced horizontal connections in tree-shrew visual cortex"></td>
   </tr>
 </table>
